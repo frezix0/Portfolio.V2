@@ -5,11 +5,11 @@ Welcome to **PortfolioV2**, a modern, responsive personal portfolio website buil
 ## 🚀 Features
 
 - **Responsive Design**: Works seamlessly across desktops, tablets, and mobile devices.
-- **Project Showcase**: Display your best projects with images, descriptions, and links.
-- **About Section**: Introduce yourself, your skills, and your background.
-- **Contact Form**: Enable visitors to get in touch with you directly.
 - **Smooth Animations**: Engaging transitions and effects for a professional look.
 - **Customizable**: Easily update content, colors, and images to match your style.
+- **About Section**: Introduce yourself, your skills, and your background.
+- **Project Showcase**: Display your best projects with images, descriptions, and links.
+- **Contact Form**: Enable visitors to get in touch with you directly.
 
 ## 🛠️ Technologies Used
 
@@ -21,13 +21,15 @@ Welcome to **PortfolioV2**, a modern, responsive personal portfolio website buil
 
 ```
 PortfolioV2/
-├── assets/
-│   ├── images/
-│   └── icons/
-├── css/
-│   └── style.css
-├── js/
-│   └── main.js
+├── src/
+│   ├── Certification/
+│   ├── Project/
+│   └── Skill/
+├── styles/
+│   ├── style.css
+│   └── responsive.css
+├── scripts/
+│   └── script.js
 ├── index.html
 └── README.md
 ```

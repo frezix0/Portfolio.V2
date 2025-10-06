@@ -15,7 +15,7 @@
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
+          <li><a href="#skill">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -24,12 +24,76 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+
+      <!-- Glitch scan lines -->
+      <div class="glitch-line" style="animation-delay: 0s"></div>
+      <div class="glitch-line" style="animation-delay: 4s"></div>
+
+      <!-- Code rain -->
+      <div
+        class="code-rain"
+        style="left: 10%; animation-duration: 12s; animation-delay: 0s"
+      >
+        01101001
+      </div>
+      <div
+        class="code-rain"
+        style="left: 25%; animation-duration: 15s; animation-delay: 2s"
+      >
+        11010010
+      </div>
+      <div
+        class="code-rain"
+        style="left: 40%; animation-duration: 18s; animation-delay: 4s"
+      >
+        10110101
+      </div>
+      <div
+        class="code-rain"
+        style="left: 60%; animation-duration: 14s; animation-delay: 1s"
+      >
+        01011010
+      </div>
+      <div
+        class="code-rain"
+        style="left: 75%; animation-duration: 16s; animation-delay: 3s"
+      >
+        11001101
+      </div>
+      <div
+        class="code-rain"
+        style="left: 90%; animation-duration: 13s; animation-delay: 5s"
+      >
+        10101110
+      </div>
+
+      <!-- Binary floating elements -->
+      <div class="binary-float" style="left: 15%; animation-delay: 0s">010</div>
+      <div class="binary-float" style="left: 35%; animation-delay: 3s">101</div>
+      <div class="binary-float" style="left: 55%; animation-delay: 6s">110</div>
+      <div class="binary-float" style="left: 75%; animation-delay: 9s">001</div>
+      <div class="binary-float" style="left: 85%; animation-delay: 12s">
+        111
+      </div>
+
       <div class="hero-content">
-        <h1>Hello, I'm Full-Stack Developer!</h1>
+        <div class="hero-greeting">
+          <span class="wave-emoji">👋</span>
+          <span>Hi there! I'm</span>
+        </div>
+
+        <div class="hero-title-wrapper">
+          <h1 class="hero-name">Marsya Florensia</h1>
+          <div class="hero-role-container">
+            <span class="hero-arrow">→</span>
+            <div class="hero-dynamic-role" id="dynamicRole"></div>
+          </div>
+        </div>
+
         <p>
-          "I build complete applications from front-end to back-end, creating
-          seamless user experiences powered by efficient server logic and
-          reliable databases."
+          "I transform complex problems into elegant digital solutions. From
+          designing intuitive interfaces to architecting robust backend systems,
+          I build applications that users love and businesses rely on."
         </p>
 
         <div class="cta-buttons">
@@ -89,9 +153,6 @@
       <div class="container">
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
-          <div class="about-image">
-            <img src="src/profile.jpg" alt="Profile" />
-          </div>
           <div class="about-text">
             <h3>
               Hello, I'm <span class="name-highlight">Marsya Florensia</span>
@@ -99,16 +160,30 @@
 
             <div class="role-tags">
               <span class="role-tag">Full-Stack Developer</span>
+              <span class="role-tag">IT Engineer</span>
+              <span class="role-tag">Code Enthusiast</span>
               <span class="role-tag">Problem Solver</span>
             </div>
 
             <p>
-              I'm a full-stack developer with a designer's eye and a coder's
-              mindset. Starting from a love for UI/UX, I craft interfaces that
-              not only look great but also perform flawlessly. For me, every
-              project is about turning ideas into experiences that feel as good
-              as they look.
+              I'm a developer who bridges the gap between design and functionality. 
+              My journey started with a fascination for how things work, which naturally 
+              evolved into building digital solutions that solve real problems. What drives 
+              me isn't just writing code—it's creating systems that people can rely on and 
+              interfaces that feel intuitive.
             </p>
+
+            <div class="about-highlight">
+              <h4>What Makes Me Different</h4>
+              <p>
+                I approach development with a teacher's mindset. Having spent years 
+                breaking down complex mathematical concepts for students, I've learned 
+                that the best solutions are those that are simple, clear, and maintainable. 
+                This perspective shapes how I architect systems—always thinking about the 
+                next developer who will work with my code, always optimizing for clarity 
+                without sacrificing performance.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -129,11 +204,12 @@
                   />
                 </svg>
               </div>
-              <h6>Design Foundation</h6>
+              <h6>Teaching Foundation</h6>
               <p>
-                Started with UI/UX design, learning the principles of
-                user-centered design and visual aesthetics that guide my
-                development approach today.
+                Built problem-solving and communication skills through teaching 
+                mathematics and science. This experience taught me to break down 
+                complex problems into understandable parts—a skill that directly 
+                translates to clean, maintainable code.
               </p>
             </div>
 
@@ -153,8 +229,8 @@
               <h6>Code Mastery</h6>
               <p>
                 Expanded into full-stack development, mastering modern
-                frameworks and building complete applications from concept to
-                deployment.
+                frameworks and building complete applications. Applied teaching methodologies 
+                to create intuitive user experiences and well-documented systems.
               </p>
             </div>
 
@@ -173,9 +249,9 @@
               </div>
               <h6>Continuous Growth</h6>
               <p>
-                Currently expanding my expertise while teaching others, staying
-                updated with latest technologies and best practices in the
-                field.
+                Currently engineering scalable solutions, combining 
+                technical expertise with clear communication. Continuously learning 
+                and sharing knowledge while delivering production-grade applications.
               </p>
             </div>
           </div>
@@ -184,18 +260,27 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
+    <section id="skill">
       <div class="container">
         <h2 class="section-title">Skills & Experiences</h2>
+        
         <!-- Navigation Tabs -->
         <div class="skills-nav">
-          <button class="skills-nav-btn active" data-tab="skills-experience">
+          <button class="skills-nav-btn active" data-tab="skills">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
               <path
                 d="M8 2v3h8V2h3v19H5V2h3zm2 2v1h4V4h-2zm0 3v1h4V7h-2zm0 3v1h4v-1h-2z"
               />
             </svg>
-            Skills & Experience
+            Skills
+          </button>
+          <button class="skills-nav-btn" data-tab="experience">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path 
+                d="M12 2c.9 0 1.8.2 2.6.6 1.6.8 3 2.3 3.8 3.8.4.8.6 1.7.6 2.6 0 1.7-.4 3.5-1.1 5.1-.6 1.4-1.5 2.6-2.6 3.6l-4.7 4.7-2.1-.8c-1.6-.6-3.1-1.9-4.3-3.6-.8-1.2-1.3-2.4-1.5-3.8-.2-.9-.1-1.9.3-2.8 1-2.8 3.4-5.1 6.2-6.1.9-.3 1.9-.4 2.8-.4zM9.5 14.9l4.6-4.6M7.5 12.5c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1z"
+              />
+            </svg>
+            Experience
           </button>
           <button class="skills-nav-btn" data-tab="certificates">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -207,198 +292,235 @@
           </button>
         </div>
 
-        <!-- Skills & Experience Tab -->
-        <div class="skills-tab-content active" id="skills-experience">
-          <div class="skills-experience-container">
-            <!-- Skills Grid -->
-            <div class="skills-section">
-              <h3 class="subsection-title">Technical Skills</h3>
-              <div class="skills-grid-modern">
-                <div class="skill-item-modern">
-                  <div class="skill-icon">
-                    <svg
-                      role="img"
-                      aria-label="HTML5"
-                      width="40"
-                      height="40"
-                      viewBox="0 0 24 24"
-                      fill="#E34F26"
-                    >
-                      <path
-                        d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"
-                      />
-                    </svg>
+      <!-- Skills Tab -->
+        <div class="skills-tab-content active" id="skills">
+          <div class="skills-container">
+            <!-- Core Stack Column -->
+              <div class="skills-column">
+                <h3 class="subsection-title">Core Stack</h3>
+                <div class="skills-grid-modern">
+                  <div class="skill-item-modern">
+                    <div class="skill-icon">
+                      <img src="src/Skill/react-svgrepo-com.svg" alt="React.js" width="50" height="50" />
+                    </div>
+                    <span>React</span>
                   </div>
-                  <span>HTML</span>
-                </div>
-                <div class="skill-item-modern">
-                  <div class="skill-icon">
-                    <img
-                      src="src/Skill/css-3-svgrepo-com.svg"
-                      alt="CSS"
-                      width="50"
-                      height="50"
-                    />
+                  <div class="skill-item-modern">
+                    <div class="skill-icon">
+                      <img src="src/Skill/Python_logo_01.svg" alt="Python" width="50" height="50" />
+                    </div>
+                    <span>Python</span>
                   </div>
-                  <span>CSS</span>
-                </div>
-                <div class="skill-item-modern">
-                  <div class="skill-icon">
-                    <svg
-                      width="40"
-                      height="40"
-                      viewBox="0 0 24 24"
-                      fill="#F7DF1E"
-                    >
-                      <path
-                        d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"
-                      />
-                    </svg>
+                  <div class="skill-item-modern">
+                    <div class="skill-icon">
+                      <img src="src/Skill/fastapi-1.svg" alt="FastAPI" width="50" height="50" />
+                    </div>
+                    <span>FastAPI</span>
                   </div>
-                  <span>JavaScript</span>
-                </div>
-                <div class="skill-item-modern">
-                  <div class="skill-icon">
-                    <img
-                      src="src/Skill/react-svgrepo-com.svg"
-                      alt="React.js"
-                      width="50"
-                      height="50"
-                    />
+                  <div class="skill-item-modern">
+                    <div class="skill-icon">
+                      <img src="src/Skill/mysql-logo-pure.svg" alt="MySQL" width="50" height="50" />
+                    </div>
+                    <span>MySQL</span>
                   </div>
-                  <span>React.js</span>
-                </div>
-                <div class="skill-item-modern">
-                  <div class="skill-icon">
-                    <svg
-                      width="40"
-                      height="40"
-                      viewBox="0 0 24 24"
-                      fill="#38B2AC"
-                    >
-                      <path
-                        d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"
-                      />
-                    </svg>
+                  <div class="skill-item-modern">
+                    <div class="skill-icon">
+                      <img src="src/Skill/postgresql.svg" alt="PostgreSQL" width="50" height="50" />
+                    </div>
+                    <span>PostgreSQL</span>
                   </div>
-                  <span>Tailwind</span>
-                </div>
-                <div class="skill-item-modern">
-                  <div class="skill-icon">
-                    <svg
-                      width="40"
-                      height="40"
-                      viewBox="0 0 24 24"
-                      fill="#4FC08D"
-                    >
-                      <path
-                        d="M24,1.61H14.06L12,5.16,9.94,1.61H0L12,22.39ZM12,14.08,5.16,2.23H9.59L12,6.41l2.41-4.18h4.43Z"
-                      />
-                    </svg>
+                  <div class="skill-item-modern">
+                    <div class="skill-icon">
+                      <svg width="40" height="40" viewBox="0 0 24 24" fill="#F7DF1E">
+                        <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z" />
+                      </svg>
+                    </div>
+                    <span>JavaScript</span>
                   </div>
-                  <span>Vue.js</span>
-                </div>
-                <div class="skill-item-modern">
-                  <div class="skill-icon">
-                    <img
-                      src="src/Skill/nextjs-icon-svgrepo-com.svg"
-                      alt="Next.js"
-                      width="50"
-                      height="50"
-                    />
+                  <div class="skill-item-modern">
+                    <div class="skill-icon">
+                      <img src="src/Skill/typescript.svg" alt="TypeScript" width="50" height="50" />
+                    </div>
+                    <span>TypeScript</span>
                   </div>
-                  <span>Next.js</span>
-                </div>
-                <div class="skill-item-modern">
-                  <div class="skill-icon">
-                    <img
-                      src="src/Skill/7564187_figma_logo_brand_icon.svg"
-                      alt="Figma"
-                      width="50"
-                      height="50"
-                    />
-                  </div>
-                  <span>Figma</span>
-                </div>
-                <div class="skill-item-modern">
-                  <div class="skill-icon">
-                    <img
-                      src="src/Skill/Python_logo_01.svg"
-                      alt="Python"
-                      width="50"
-                      height="50"
-                    />
-                  </div>
-                  <span>Python</span>
-                </div>
-                <div class="skill-item-modern">
-                  <div class="skill-icon">
-                    <img
-                      src="src/Skill/database-sql-svgrepo-com.svg"
-                      alt="SQL"
-                      width="50"
-                      height="50"
-                    />
-                  </div>
-                  <span>SQL</span>
-                </div>
-                <div class="skill-item-modern">
-                  <div class="skill-icon">
-                    <img
-                      src="src/Skill/svgviewer-output.svg"
-                      alt="API"
-                      width="50"
-                      height="50"
-                    />
-                  </div>
-                  <span>API</span>
                 </div>
               </div>
-            </div>
+              
+              <!-- Tools & Frameworks Column -->
+                <div class="skills-column">
+                  <h3 class="subsection-title">Tools & Frameworks</h3>
+                  <div class="skills-grid-modern">
+                    <div class="skill-item-modern">
+                      <div class="skill-icon">
+                        <img src="src/Skill/7564187_figma_logo_brand_icon.svg" alt="Figma" width="50" height="50" />
+                      </div>
+                      <span>Figma</span>
+                    </div>
+                    <div class="skill-item-modern">
+                      <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="#38B2AC">
+                          <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z" />
+                        </svg>
+                      </div>
+                      <span>Tailwind</span>
+                    </div>
+                    <div class="skill-item-modern">
+                      <div class="skill-icon">
+                        <img src="src/Skill/git-icon.svg" alt="Git" width="50" height="50" />
+                      </div>
+                      <span>Git</span>
+                    </div>
+                    <div class="skill-item-modern">
+                      <div class="skill-icon">
+                        <img src="src/Skill/nextjs-icon-svgrepo-com.svg" alt="Next.js" width="50" height="50" />
+                      </div>
+                      <span>Next.js</span>
+                    </div>
+                    <div class="skill-item-modern">
+                    <div class="skill-icon">
+                      <svg width="40" height="40" viewBox="0 0 24 24" fill="#4FC08D">
+                        <path d="M24,1.61H14.06L12,5.16,9.94,1.61H0L12,22.39ZM12,14.08,5.16,2.23H9.59L12,6.41l2.41-4.18h4.43Z" />
+                      </svg>
+                    </div>
+                    <span>Vue.js</span>
+                  </div>
+                  </div>
+                </div>
+          </div>
+        </div>
 
-            <!-- Experience Section -->
-            <div class="experience-section">
-              <h3 class="subsection-title">Experience</h3>
+      <!-- Experience Tab -->
+        <div class="skills-tab-content" id="experience">
+          <div class="experience-container">
               <div class="experience-timeline">
                 <div class="timeline-item">
-                  <div class="timeline-date">2023 - Present</div>
                   <div class="timeline-content">
-                    <h4>Teacher at Cassia Science Center</h4>
-                    <ul>
+                    <div class="experience-header">
+                        <div>
+                            <h3 class="experience-title">IT Engineer</h3>
+                            <div class="experience-company">jobcore.id</div>
+                        </div>
+                        <div class="experience-date">September 2025 - Present</div>
+                    </div>
+                    <p class="experience-description">
+                      Managing IT infrastructure to deliver scalable, high-performance solutions.
+                    </p>
+                    <ul class="experience-highlights">
                       <li>
-                        Designed engaging lesson plans and simplified complex
-                        concepts in Mathematics and Science for elementary to
-                        high school students.
+                        Designed, and maintained dashboard internal web systems to streamline operational workflows.
                       </li>
                       <li>
-                        Helped improve students' academic performance and
-                        problem-solving skills through personalized teaching
-                        methods.
+                        Collaborated with cross-functional teams and stakeholders in an Agile environment, gathering
+                        requirements and delivering production-ready features.
                       </li>
                       <li>
-                        Consistently received positive feedback from students
-                        and parents for teaching effectiveness.
+                        Implemented troubleshooting and debugging processes.
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="experience-container">
+              <div class="experience-timeline">
+                <div class="timeline-item">
+                  <div class="timeline-content">
+                    <div class="experience-header">
+                        <div>
+                            <h3 class="experience-title">Mathematics & Science Teacher</h3>
+                            <div class="experience-company">Cassia Science Center</div>
+                        </div>
+                        <div class="experience-date">October 2023 - August 2025</div>
+                    </div>
+                    <p class="experience-description">
+                      Educating elementary through high school students in Mathematics and Science while developing problem-solving methodologies.
+                    </p>
+                    <ul class="experience-highlights">
+                      <li>
+                        Mentored 15+ elementary and high school students in problem-solving and 
+                        logical thinking, building a foundation for applying 
+                        real-world principles to improve understanding.
+                      </li>
+                      <li>
+                        Created learning modules and interactions that enhanced engagement 
+                        and knowledge retention.
+                      </li>
+                      <li>
+                        Simplified complex concepts into clear, actionable steps – 
+                        a skill applied to technical documentation.
+                      </li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tagline">Critical Thinking</span>
+                        <span class="tech-tagline">Problem Solving</span>
+                        <span class="tech-tagline">Communication</span>
+                        <span class="tech-tagline">Mentoring</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
 
         <!-- Certificates Tab -->
         <div class="skills-tab-content" id="certificates">
           <div class="certificates-grid">
             <div class="certificate-card">
               <div class="certificate-preview">
-                <img src="src/Certification/C.png" alt="Certificate 1" />
+                <img src="src/Certification/AI.png" alt="Certificate 1" />
               </div>
               <div class="certificate-info">
-                <h4>Memulai Pemrograman dengan C</h4>
+                <h4>Microsoft Certified: Azure AI Fundamentals</h4>
                 <p>
-                  Completed course C programming language using an online IDE
-                  such as Glot.io or Replit
+                  Foundational knowledge of AI concepts and how they relate to Azure services
+                </p>
+              </div>
+            </div>
+            <div class="certificate-card">
+              <div class="certificate-preview">
+                <img src="src/Certification/Software.png" alt="Certificate 2" />
+              </div>
+              <div class="certificate-info">
+                <h4>Software Engineer Intern</h4>
+                <p>
+                  Proficiency in Data Structures, Algorithms, and SQL for entry-level 
+                  software engineering roles and practical problem-solving skills
+                </p>
+              </div>
+            </div>
+            <div class="certificate-card">
+              <div class="certificate-preview">
+                <img src="src/Certification/SQL.png" alt="Certificate 3" />
+              </div>
+              <div class="certificate-info">
+                <h4>SQL (Advanced)</h4>
+                <p>
+                  Proficiency in SQL concepts ability to solve challenging 
+                  data manipulation and analysis problems
+                </p>
+              </div>
+            </div>
+            <div class="certificate-card">
+              <div class="certificate-preview">
+                <img src="src/Certification/Problem.png" alt="Certificate 4" />
+              </div>
+              <div class="certificate-info">
+                <h4>Problem Solving (Intermediate)</h4>
+                <p>
+                  Demonstrated skill set in problem-solving, validated by 
+                  HackerRank's global recognition
+                </p>
+              </div>
+            </div>
+            <div class="certificate-card">
+              <div class="certificate-preview">
+                <img src="src/Certification/Web.png" alt="Certificate 5" />
+              </div>
+              <div class="certificate-info">
+                <h4>Belajar Dasar Pemrograman Web</h4>
+                <p>
+                  Basic HTML and CSS as the three foundations of website
+                  creation.
                 </p>
               </div>
             </div>
@@ -414,39 +536,8 @@
                 </p>
               </div>
             </div>
-            <div class="certificate-card">
-              <div class="certificate-preview">
-                <img src="src/Certification/UIUX.png" alt="Certificate 3" />
-              </div>
-              <div class="certificate-info">
-                <h4>UI/UX Design</h4>
-                <p>User interface and experience design certification</p>
-              </div>
-            </div>
-            <div class="certificate-card">
-              <div class="certificate-preview">
-                <img src="src/Certification/Js.png" alt="Certificate 4" />
-              </div>
-              <div class="certificate-info">
-                <h4>Belajar Dasar Pemrograman JavaScript</h4>
-                <p>Deep dive into modern JavaScript features</p>
-              </div>
-            </div>
-            <div class="certificate-card">
-              <div class="certificate-preview">
-                <img src="src/Certification/Web.png" alt="Certificate 5" />
-              </div>
-              <div class="certificate-info">
-                <h4>Belajar Dasar Pemrograman Web</h4>
-                <p>
-                  Basic HTML and CSS as the three foundations of website
-                  creation.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
-      </div>
     </section>
 
     <!-- Modal -->
@@ -483,11 +574,38 @@
             <div class="project-content">
               <h4>E-Commerce Website</h4>
               <p>
-                E-Cart is a full-featured e-commerce platform built with Python,
-                React (frontend), FastAPI, and MySQL (backend), providing a
-                robust solution for trading goods online.
+                A full-stack trading platform designed to simulate real online shopping.
+                Built with React, FastAPI, and MySQL for real-time product management and secure authentication.
+                Optimized queries and caching improved page load.
               </p>
+              <div class="tech-tags">
+                <div class="tag">
+                  <img
+                      src="src/Skill/Python_logo_01.svg"
+                      alt="Python"
+                    />
+                </div>
+                <div class="tag">
+                  <img
+                      src="src/Skill/fastapi-1.svg"
+                      alt="FastAPI"
+                    />
+                </div>
+                <div class="tag">
+                  <img
+                      src="src/Skill/react-svgrepo-com.svg"
+                      alt="React"
+                    />
+                </div>
+                <div class="tag">
+                  <img
+                      src="src/Skill/mysql-logo-pure.svg"
+                      alt="SQL"
+                    />
+                </div>
+              </div>
             </div>
+
           </div>
           <div class="project-card">
             <div class="project-image">
@@ -511,11 +629,37 @@
             <div class="project-content">
               <h4>Patient Feedback Website</h4>
               <p>
-                A responsive feedback platform built with React.js (frontend)
-                and Python (backend), integrating external APIs to provide
-                real-time weather data and offline capabilities for enhanced
-                user experience.
+                A platform that collects and visualizes patient feedback with dynamic charts and offline support.
+                Developed using React.js and Python (FastAPI), integrated with live weather APIs for contextual UX.
+                Improved response tracking efficiency.
               </p>
+
+              <div class="tech-tags">
+                <div class="tag">
+                  <img
+                      src="src/Skill/Python_logo_01.svg"
+                      alt="Python"
+                    />
+                </div>
+                <div class="tag">
+                  <img
+                      src="src/Skill/fastapi-1.svg"
+                      alt="FastAPI"
+                    />
+                </div>
+                <div class="tag">
+                  <img
+                      src="src/Skill/react-svgrepo-com.svg"
+                      alt="React"
+                    />
+                </div>
+                <div class="tag">
+                  <img
+                      src="src/Skill/mysql-logo-pure.svg"
+                      alt="SQL"
+                    />
+                </div>
+              </div>
             </div>
           </div>
           <div class="project-card">
@@ -538,12 +682,76 @@
               </div>
             </div>
             <div class="project-content">
-              <h4>Social Media Website (Front-End)</h4>
+              <h4>Social Media Website</h4>
               <p>
-                A modern social media platform built with Next.js, featuring
-                task management with drag-and-drop interface, real-time
-                collaboration.
+                A modern social hub built with Next.js, focusing on collaboration and productivity.
+                Features drag-and-drop task boards, dark mode, and responsive design.
+                Designed UI consistency and modular component structure for scalability.
               </p>
+
+              <div class="tech-tags">
+                <div class="tag">
+                  <img
+                      src="src/Skill/nextjs-icon-svgrepo-com.svg"
+                      alt="NextJs"
+                    />
+                </div>
+                <div class="tag">
+                  <img
+                      src="src/Skill/typescript.svg"
+                      alt="typescript"
+                    />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="src/Project/QuizApp.png" alt="QuizApp" />
+              <div class="project-links-overlay">
+                <a
+                  href="https://github.com/frezix0/Quiz-App"
+                  class="project-link"
+                  target="_blank"
+                  rel="noopener"
+                  title="View on GitHub"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h4>Quiz App</h4>
+              <p>
+                An interactive quiz platform with a focus on user experience and performance tracking.
+                Developed using React and TypeScript, with dynamic question rendering and progress feedback.
+                Delivers real-time scoring and saves user sessions locally.
+              </p>
+
+              <div class="tech-tags">
+                <div class="tag">
+                  <img
+                      src="src/Skill/Python_logo_01.svg"
+                      alt="Python"
+                    />
+                </div>
+                <div class="tag">
+                  <img
+                      src="src/Skill/fastapi-1.svg"
+                      alt="FastAPI"
+                    />
+                </div>
+                <div class="tag">
+                  <img
+                      src="src/Skill/typescript.svg"
+                      alt="typescript"
+                    />
+                </div>
+              </div>
             </div>
           </div>
           <div class="project-card">
@@ -555,7 +763,7 @@
                   class="project-link"
                   target="_blank"
                   rel="noopener"
-                  title="View on GitHub"
+                  title="View Live Site"
                 >
                   <svg viewBox="0 0 24 24" fill="currentColor">
                     <path
@@ -581,18 +789,42 @@
             <div class="project-content">
               <h4>To-Do List Website</h4>
               <p>
-                A simple and stylish To-Do List application built with Vue.js
-                and CSS. Organize your tasks, track your progress, and stay
-                productive!
+                A lightweight productivity app for organizing daily tasks and tracking progress.
+                Built with Vue.js and Tailwind, using local storage for persistent task management.
+                Designed clean UI flow for distraction-free user interaction.
               </p>
+
+              <div class="tech-tags">
+                <div class="tag">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="#4FC08D"
+                    >
+                      <path
+                        d="M24,1.61H14.06L12,5.16,9.94,1.61H0L12,22.39ZM12,14.08,5.16,2.23H9.59L12,6.41l2.41-4.18h4.43Z"
+                      />
+                    </svg>
+                </div>
+                <div class="tag">
+                  <svg
+                      viewBox="0 0 24 24"
+                      fill="#38B2AC"
+                    >
+                      <path
+                        d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"
+                      />
+                    </svg>
+                </div>
+              </div>
+              
             </div>
           </div>
           <div class="project-card">
             <div class="project-image">
-              <img src="src/Project/Portfolio.png" alt="Portfolio" />
+              <img src="src/Project/Budget.png" alt="BudgetApp" />
               <div class="project-links-overlay">
                 <a
-                  href="https://frezix0.github.io/Portfolio"
+                  href="https://budget-3p8m5m7uo-frezix0s-projects.vercel.app"
                   class="project-link"
                   target="_blank"
                   rel="noopener"
@@ -605,7 +837,7 @@
                   </svg>
                 </a>
                 <a
-                  href="https://github.com/frezix0/Portfolio"
+                  href="https://github.com/frezix0/Budget-App"
                   class="project-link"
                   target="_blank"
                   rel="noopener"
@@ -620,8 +852,51 @@
               </div>
             </div>
             <div class="project-content">
-              <h4>Portfolio V1</h4>
-              <p>Portfolio website of Marsya Florensia (Version 1)</p>
+              <h4>BudgetApp.</h4>
+              <p>
+                Personal finance tracker and expense analyzer built for simplicity and insight.
+                Developed with HTML5, CSS3, and JavaScript, featuring local data storage.
+                Will be built using a more modern framework, stay tuned!
+              </p>
+
+              <div class="tech-tags">
+                <div class="tag">
+                <svg
+                  role="img"
+                  aria-label="HTML5"
+                  viewBox="0 0 24 24"
+                  fill="#E34F26"
+                >
+                  <path
+                    d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"
+                  />
+                </svg>
+                </div>
+                  <div class="tag">
+                    <svg
+                    role="img"
+                    aria-label="CSS3"
+                    viewBox="0 0 24 24"
+                    fill="#1572B6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path 
+                        d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.078 4.41H5.412l.232 2.622h10.059l-.23 2.622H6.562l.326 3.426h8.578l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531l-.232-2.718h10.279l.232-2.623z" 
+                      />
+                    </svg>
+
+                  </div>
+                  <div class="tag">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="#F7DF1E"
+                    >
+                      <path
+                        d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"
+                      />
+                    </svg>
+                  </div>
+              </div>
             </div>
           </div>
         </div>
@@ -631,12 +906,15 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
       <div class="container">
-        <h2 class="section-title">Get In Touch for More Information</h2>
+        <h2 class="section-title">Let's Build Something Amazing</h2>
+        <p class="contact-intro">
+          Have a project in mind? Looking for a developer who understands both
+          design and code? Let's talk!
+        </p>
+
         <div class="contact-container">
           <div class="contact-form">
-            <h3 style="margin-bottom: 2rem; color: var(--text-dark)">
-              Send Message
-            </h3>
+            <h3 class="form-title">Send Me a Message</h3>
             <form action="https://formspree.io/f/xvggdkqd" method="POST">
               <div class="form-group">
                 <input
@@ -673,6 +951,7 @@
               <button type="submit" class="btn-submit">Send Message</button>
             </form>
           </div>
+
           <div class="contact-info">
             <div class="contact-item">
               <div class="contact-icon">
@@ -762,7 +1041,7 @@
 
     <!-- Footer -->
     <footer>
-      <p>&#169; 2025 - Marsya Florensia. All Rights Reserved.</p>
+      <p>&copy; 2025 - Marsya Florensia. All Rights Reserved.</p>
     </footer>
     <script src="scripts/script.js"></script>
   </body>

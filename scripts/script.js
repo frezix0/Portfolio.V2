@@ -16,10 +16,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
     if (window.scrollY > 100) {
-        header.style.background = 'rgba(255, 255, 255, 0.98)';
         header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
     } else {
-        header.style.background = 'rgba(255, 255, 255, 0.95)';
         header.style.boxShadow = 'none';
     }
 });
@@ -78,19 +76,20 @@ const observer = new IntersectionObserver((entries) => {
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', function () {
     // Initialize typing effect for hero title
-    const heroTitle = document.querySelector('.hero h1');
+    const heroTitle = document.querySelector('.hero-dynamic-role');
     if (heroTitle) {
         heroTitle.textContent = '';
         typeWriterLoop(
             [
-                "Hello, I'm Full-Stack Developer!",
-                "Hello, I'm Frontend Enthusiast!",
-                "Hello, I'm Backend Engineer!"
+                "Full-Stack Developer",
+                "IT Engineer",
+                "Code Enthusiast",
+                "Problem Solver"
             ],
             heroTitle,
-            120,
-            60,
-            1500
+            100,
+            50,
+            2000
         );
     }
 
@@ -109,26 +108,35 @@ document.addEventListener('DOMContentLoaded', function () {
         heroSection.style.transform = 'translateY(0)';
     }
 
-    // Tab switching functionality
+    // Tab switching functionality 
     const tabButtons = document.querySelectorAll('.skills-nav-btn');
     const tabContents = document.querySelectorAll('.skills-tab-content');
 
-    tabButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const targetTab = button.getAttribute('data-tab');
+    if (tabButtons.length > 0 && tabContents.length > 0) {
+        tabButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const targetTab = this.getAttribute('data-tab');
 
-            // Remove active class from all buttons and contents
-            tabButtons.forEach(btn => btn.classList.remove('active'));
-            tabContents.forEach(content => content.classList.remove('active'));
+                // Remove active from all buttons
+                tabButtons.forEach(btn => btn.classList.remove('active'));
 
-            // Add active class to clicked button and corresponding content
-            button.classList.add('active');
-            const targetContent = document.getElementById(targetTab);
-            if (targetContent) {
-                targetContent.classList.add('active');
-            }
+                // Remove active from all content - use display instead of class
+                tabContents.forEach(content => {
+                    content.classList.remove('active');
+                });
+
+                // Add active to clicked button
+                this.classList.add('active');
+
+                // Add active to target content and show it
+                const targetContent = document.getElementById(targetTab);
+                if (targetContent) {
+                    targetContent.classList.add('active');
+                }
+            });
         });
-    });
+
+    }
 
     // Certificate modal functionality
     const certificateCards = document.querySelectorAll('.certificate-card');
@@ -149,7 +157,7 @@ document.addEventListener('DOMContentLoaded', function () {
             card.addEventListener('click', () => {
                 const img = card.querySelector('.certificate-preview img');
                 const title = card.querySelector('.certificate-info h4');
-                
+
                 if (img && title) {
                     modal.style.display = 'block';
                     modalImg.src = img.src;
@@ -175,16 +183,4 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
-
-    // Add hover effects to modern skill items
-    const skillItems = document.querySelectorAll('.skill-item-modern');
-    skillItems.forEach(item => {
-        item.addEventListener('mouseenter', () => {
-            item.style.transform = 'translateY(-15px) scale(1.05)';
-        });
-
-        item.addEventListener('mouseleave', () => {
-            item.style.transform = 'translateY(0) scale(1)';
-        });
-    });
 });

@@ -47,10 +47,6 @@ PortfolioV2/
 3. **Customize content:**
    - Edit `index.html`, `css/style.css`, and `js/main.js` to update your info, projects, and style.
 
-## 🖼️ Screenshots
-
-![Profile](src/Home.png)
-
 ## 📬 Contact
 
 If you have any questions, suggestions, or want to collaborate, feel free to reach out via the contact form on the site or open an issue.

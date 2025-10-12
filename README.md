@@ -1,4 +1,7 @@
 # PortfolioV2
+![Web](src/Website.png) 
+
+![Phone](src/Phone.png)
 
 Welcome to **PortfolioV2**, a modern, responsive personal portfolio website built with HTML, CSS, and JavaScript. This project showcases your work, skills, and experience in a visually appealing manner.
 

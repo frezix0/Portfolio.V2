@@ -82,7 +82,6 @@ document.addEventListener('DOMContentLoaded', function () {
         typeWriterLoop(
             [
                 "Full-Stack Developer",
-                "IT Engineer",
                 "Code Enthusiast",
                 "Problem Solver"
             ],
@@ -107,6 +106,9 @@ document.addEventListener('DOMContentLoaded', function () {
         heroSection.style.opacity = '1';
         heroSection.style.transform = 'translateY(0)';
     }
+
+    // Create global floating binary elements
+    createGlobalBinaryElements();
 
     // Tab switching functionality 
     const tabButtons = document.querySelectorAll('.skills-nav-btn');
@@ -182,5 +184,41 @@ document.addEventListener('DOMContentLoaded', function () {
                 closeModal();
             }
         });
+    }
+    // Global floating binary elements
+    function createGlobalBinaryElements() {
+        const binaryStrings = ['01', '10', '001', '110', '0101', '1010', '1100', '0011', '01101', '10010'];
+        const container = document.createElement('div');
+        container.className = 'global-binary-container';
+        container.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;overflow:hidden;';
+        document.body.prepend(container);
+
+        function spawnBinary() {
+            if (container.children.length > 12) return;
+
+            const el = document.createElement('div');
+            const text = binaryStrings[Math.floor(Math.random() * binaryStrings.length)];
+            el.textContent = text;
+            el.style.cssText = `
+                position: absolute;
+                font-family: 'Courier New', monospace;
+                font-size: ${10 + Math.random() * 6}px;
+                color: rgba(102, 126, 234, ${0.08 + Math.random() * 0.12});
+                left: ${Math.random() * 100}%;
+                top: ${-5}%;
+                animation: globalBinaryFall ${15 + Math.random() * 20}s linear forwards;
+                pointer-events: none;
+            `;
+
+            container.appendChild(el);
+            el.addEventListener('animationend', () => el.remove());
+        }
+
+        // Spawn binary periodically
+        setInterval(spawnBinary, 2000);
+        // Initial batch
+        for (let i = 0; i < 6; i++) {
+            setTimeout(spawnBinary, i * 500);
+        }
     }
 });
